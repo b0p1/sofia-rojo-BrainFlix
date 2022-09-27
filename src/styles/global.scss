@@ -1,0 +1,11 @@
+@use "./partials/fonts" as *;
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}

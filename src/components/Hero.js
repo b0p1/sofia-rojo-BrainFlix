@@ -1,10 +1,10 @@
 const Hero = () => {
     return (
-      <hero>
+      <section className="hero">
         <video className="hero__video">
             <source></source>
         </video>
-      </hero>
+      </section>
     );
   };
   

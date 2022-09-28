@@ -1,0 +1,57 @@
+@use "./partials/fonts" as *;
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    position: relative;
+    &__logo{
+        height: 1.563rem;
+    }
+    &__search-bar{
+        font-family: $Ave-reg;
+        font-size: 0.813rem;
+        padding: .5rem;
+        padding-left: 2rem;
+        color: $BrainFlix-DarkBlack;
+        background: $Alabaster;
+        border: 1px solid $Mercury;
+        border-radius: .25rem;
+        margin: 1rem 0;
+        width: 70%;
+
+        &::placeholder{
+            color: $BrainFlix-DarkBlack;
+        }
+        &__icon{
+            position: absolute;
+            top: 4rem;
+            left: 1.5rem;
+        }
+    }
+    &__button{
+        font-family: $Ave-demi;
+        color: white;
+        background: $BrainFlix-Blue;
+        border: none;
+        border-radius: .25rem;
+        padding: 1rem;
+        &__icon{
+            position:absolute;
+            top:7.5em;
+            left: 1.5rem;
+        }
+    }
+    &__avatar{
+        border-radius: 50%;
+        width: 2.25rem;
+        height: 2.25rem;
+        position: absolute;
+        background: url(../assets/images/Mohan-muruge.jpg);
+        object-fit:scale-down;
+        right: 1rem;
+        top: 3.5rem;
+    }
+}

@@ -17,7 +17,7 @@ const Header = () => {
         <img className="nav__search-bar__icon" src={SearchIcon} />
         <button className="nav__button"> UPLOAD</button>
         <img className="nav__button__icon" src={UploadIcon} />
-        <image className="nav__avatar" src={ProfileAvatar} alt={"Profile Avatar"}/>
+        <img className="nav__avatar" src={ProfileAvatar} alt={"Profile Avatar"}/>
       </nav>
     </header>
   );

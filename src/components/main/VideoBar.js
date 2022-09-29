@@ -7,7 +7,8 @@ export default function VideoBar (videos, setSelected){
                 <div className="video-card">
                     {videos.map((item)=>{
                         return(
-                        <img src="item.image" />
+                        <img src={item.image} />
+                        
                         )
                     })}
                 </div>

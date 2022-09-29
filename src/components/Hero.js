@@ -1,13 +1,11 @@
-
-
-const Hero = () => {
+export default function Hero () {
   return (
     <section className="hero">
       <video className="hero__video">
-        <source  />
+        <source />
       </video>
     </section>
   );
 };
 
-export default Hero;
+

@@ -1,4 +1,4 @@
-export default function Hero () {
+export default function Hero() {
   return (
     <section className="hero">
       <video className="hero__video">
@@ -6,6 +6,4 @@ export default function Hero () {
       </video>
     </section>
   );
-};
-
-
+}

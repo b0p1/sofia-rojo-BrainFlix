@@ -1,7 +1,15 @@
 import VideoBar from "./VideoBar";
+import videoDetails from "../../data/video-details.json";
+import { useState } from "react";
 
-export default function Main (){
-    <>
-    <VideoBar/>
-    </>
+function Main({ videos, setSelected }) {
+//   console.log(videos);
+  return (
+    <div>
+      <VideoBar videos={videos} setSelected={setSelected} />
+    </div>
+  );
 }
+
+export default Main;
+// 

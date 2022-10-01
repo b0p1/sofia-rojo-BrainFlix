@@ -1,4 +1,5 @@
 import VideoCard from "./VideoCard";
+import'../../styles/main/video-bar.scss'
 
 export default function VideoBar({ videos, setSelected }) {
   //   console.log(videos);

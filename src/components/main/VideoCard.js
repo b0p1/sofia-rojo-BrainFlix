@@ -1,3 +1,5 @@
+import '../../styles/main/video-card.scss';
+
 export default function VideoCard({ item, setSelected }) {
   console.log(item);
     return (

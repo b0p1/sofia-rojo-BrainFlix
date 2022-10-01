@@ -1,8 +1,10 @@
-@use "./partials/fonts" as *;
-@use "./partials/variables" as *;
-@use "./partials/mixins" as *;
+@use "../partials/fonts" as *;
+@use "../partials/variables" as *;
+@use "../partials/mixins" as *;
 
 .video-bar{
     padding: 1rem;
-    
+    font-size: .813rem;
+    color: $Silver;
+    font-family: $Ave-demi;
 }

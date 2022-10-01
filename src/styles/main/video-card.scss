@@ -1,0 +1,37 @@
+@use "../partials/fonts" as *;
+@use "../partials/variables" as *;
+@use "../partials/mixins" as *;
+
+.video-card{
+    padding: 1rem 0;
+    display: flex;
+    &__img{
+        min-width:8rem;
+        max-width: 8rem;
+        height: 5rem;
+        object-fit:cover;
+        border-radius: .25rem;
+        background-color: $Mercury;
+    }
+    &__desc{
+        font-size: .8rem;
+        padding-left: 1rem;
+        color: $BrainFlix-DarkBlack;
+      
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__title{ 
+            margin: 0;
+            // overflow: hidden;
+            // white-space: nowrap;
+            // text-overflow: ellipsis;
+        }
+        &__channel{
+            font-family: $Ave-reg;
+            color: $BrainFlix-Black;
+            margin: 0;
+        }
+    }
+}

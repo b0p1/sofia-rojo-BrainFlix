@@ -13,14 +13,20 @@ const Header = () => {
           src={BrainFlixLogo}
           alt={"BrainFlix Logo"}
         ></img>
+        <div className="nav__search-bar-container">
         <input
           className="nav__search-bar"
           type={"text"}
           placeholder={"Search"}
         ></input>
         <img className="nav__search-bar__icon" src={SearchIcon} />
+
+        </div>
+        <div className="nav__button-container">
         <button className="nav__button"> UPLOAD</button>
         <img className="nav__button__icon" src={UploadIcon} />
+        </div>
+       
         <img
           className="nav__avatar"
           src={ProfileAvatar}

@@ -7,8 +7,26 @@
   flex-direction: column;
   padding: 1rem;
   position: relative;
+  @include tablet{
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  @include desktop{
+    padding: 1rem 8rem;
+  }
   &__logo {
     height: 1.563rem;
+    @include tablet{
+      padding: 1rem;
+      position: absolute;
+      top: .75rem;
+      left: 1rem;
+    }
+    @include desktop{
+      left:7rem;
+    }
   }
   &__search-bar {
     font-family: $Ave-reg;
@@ -20,15 +38,33 @@
     border: 1px solid $Mercury;
     border-radius: 0.25rem;
     margin: 1rem 0;
-    width: 70%;
+    width: 67%;
+    @include tablet{
+      margin: 0;
+      padding: .75rem;
+      padding-left: 2.5rem;
+      padding-right:1rem;
+    }
+    &-container{
+      position: relative;
+      margin: 0;
+      @include tablet{
+        
+      }
+    }
 
     &::placeholder {
       color: $BrainFlix-DarkBlack;
     }
     &__icon {
       position: absolute;
-      top: 4rem;
-      left: 1.5rem;
+      top: 1.5rem;
+      left: .5rem;
+      @include tablet{
+        top: .75rem;
+        left: 1rem;
+        
+      }
     }
   }
   &__button {
@@ -38,10 +74,24 @@
     border: none;
     border-radius: 0.25rem;
     padding: 1rem;
+    width: 100%;
+    @include tablet{
+      padding:.75rem 3rem;
+    }
+    &-container{
+      position: relative;
+      @include tablet{
+       margin-left: 1rem;
+      }
+    }
     &__icon {
       position: absolute;
-      top: 7.5em;
-      left: 1.5rem;
+      top: .75rem;
+      left: .5rem;
+      @include tablet{
+        top: .5rem;
+        left: .5rem;
+      }
     }
   }
   &__avatar {
@@ -53,5 +103,13 @@
     object-position: 20%;
     right: 1rem;
     top: 3.5rem;
+    @include tablet{
+      width: 3rem;
+      height: 3rem;
+      position:static;
+      margin:0 .5rem;
+      margin-left: 1rem;
+    }
   }
+  
 }

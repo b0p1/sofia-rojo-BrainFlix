@@ -7,4 +7,21 @@
     font-size: .813rem;
     color: $Silver;
     font-family: $Ave-demi;
+    @include tablet{
+        width: 50%;
+    }
+    @include desktop {
+        display: none;
+    }
+}
+
+.video-bar-aside{
+    display: none;
+    @include desktop{
+        display: block;
+        padding: 1rem;
+        font-size: .813rem;
+        color: $Silver;
+        font-family: $Ave-demi;
+    }
 }

@@ -36,6 +36,9 @@
       font-family: $Ave-reg;
       color: #afafaf;
       font-size: 0.875rem;
+      @include tablet{
+        padding-right: 1.5rem;
+      }
     }
   }
   &__content {
@@ -43,5 +46,8 @@
     margin-bottom: 0;
     font-family: $Ave-reg;
     padding-left: 3rem;
+    @include tablet{
+      padding-right: 1.5rem;
+    }
   }
 }

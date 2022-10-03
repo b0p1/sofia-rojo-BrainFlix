@@ -9,6 +9,14 @@
   font-family: $Ave-reg;
   font-size: 0.813rem;
   position: relative;
+  @include tablet {
+    padding: 0rem 2rem;
+    margin-top: -1rem;
+    flex-direction: row;
+  }
+  @include desktop {
+    padding-left: 8rem;
+  }
 }
 
 .comment {
@@ -17,8 +25,8 @@
   }
   &-box {
     resize: none;
-    margin-top: .25rem;
-    margin-bottom: 1rem ;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
     margin-left: 3rem;
     width: 82%;
   }
@@ -29,6 +37,7 @@
   }
   &-button__container {
     position: relative;
+    margin: 0;
   }
 
   &-button {
@@ -40,10 +49,27 @@
     padding: 1rem 0;
     width: 82%;
     margin-left: 3rem;
+    @include tablet {
+      margin: 0;
+      position: absolute;
+      top: -4.125rem;
+      right: -11rem;
+      width: 35%;
+      padding: 0.925rem 0;
+    }
+    @include desktop {
+      width: 30%;
+    }
     &__icon {
       position: absolute;
-      top: .75rem;
+      top: 0.75rem;
       left: 5rem;
+      @include tablet {
+        left: 33rem;
+        top: -3.25rem;
+        z-index: 1;
+      }
+      @include desktop;
     }
   }
   &-avatar {
@@ -55,6 +81,12 @@
     position: absolute;
     top: 1.5rem;
     left: 1rem;
+    @include tablet {
+      left: 2rem;
+    }
+    @include desktop {
+      left: 4rem;
+    }
   }
 }
 
@@ -68,6 +100,10 @@
   padding: 0.7rem;
   padding-bottom: 5rem;
   width: 73%;
+  @include tablet {
+    padding-bottom: 1rem;
+    width: 80%;
+  }
 }
 input {
   &::placeholder {

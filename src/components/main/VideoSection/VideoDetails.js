@@ -1,20 +1,27 @@
 import VideoDescription from "./VideoDescription";
+import "../../../styles/main/video-details.scss";
+import ViewIcon from "../../../assets/icons/views.svg";
+import LikesIcon from "../../../assets/icons/likes.svg";
 
 function VideoDetails({ selectedVideo }) {
   //   console.log(selectedVideo);
 
   return (
     <div className="video-section__details">
-      <h1>{selectedVideo.title}</h1>
+      <h1 >{selectedVideo.title}</h1>
       <div className="video-section__data">
-        <h2 className="video-section__data__channel">
-          {selectedVideo.channel}
-        </h2>
-        <h2 className="video-section__data__views">{selectedVideo.views}</h2>
-        <h2 className="video-section__data__date">
-          {formatDate(new Date(selectedVideo.timestamp))}
-        </h2>
-        <h2 className="video-section__data__likes">{selectedVideo.likes}</h2>
+        <div className="video-section__top-row">
+          <h2 className="video-section__channel">By {selectedVideo.channel}</h2>
+          <img className="video-section__views-icon" src={ViewIcon}/>
+          <h2 className="video-section__views">{selectedVideo.views}</h2>
+        </div>
+        <div className="video-section__bottom-row">
+          <h2 className="video-section__date">
+            {formatDate(new Date(selectedVideo.timestamp))}
+          </h2>
+          <img className="video-section__likes-icon" src={LikesIcon}/>
+          <h2 className="video-section__likes">{selectedVideo.likes}</h2>
+        </div>
       </div>
       <VideoDescription selectedVideo={selectedVideo} />
     </div>

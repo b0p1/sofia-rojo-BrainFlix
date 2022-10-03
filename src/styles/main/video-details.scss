@@ -1,0 +1,62 @@
+@use "../partials/fonts" as *;
+@use "../partials/variables" as *;
+@use "../partials/mixins" as *;
+
+h1 {
+  font-family: $Ave-demi;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+h3,
+h2 {
+  font-size: 0.813rem;
+}
+.video-section {
+  &__details {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__data {
+    border-bottom: 1px solid $Mercury;
+    border-top: 1px solid $Mercury;
+    font-size: 0.813rem;
+  }
+  &__top-row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-top: .5rem;
+  }
+  &__views {
+    color: $Silver;
+    padding-left: 7rem;
+    &-icon{
+        position: absolute;
+        top: 1.25rem;
+        left:9.5rem;
+    }
+  }
+  &__bottom-row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-bottom: .5rem;
+  }
+  &__date {
+    color: $Silver;
+  }
+  &__likes {
+    color: $Silver;
+    padding-left: 6.5rem;
+    &-icon{
+        position: absolute;
+        top: .75rem;
+        left:9.5rem;
+    }
+  }
+  &__description {
+    font-size: 0.813rem;
+  }
+}

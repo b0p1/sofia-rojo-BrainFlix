@@ -1,3 +1,5 @@
+import "../../../styles/main/video-details.scss";
+
 function VideoDescription({ selectedVideo }) {
   return (
     <div className="video-section__description">

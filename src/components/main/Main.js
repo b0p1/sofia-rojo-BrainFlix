@@ -17,9 +17,11 @@ function Main({ videoDetails, selectedVideo, setSelected }) {
           setSelected={setSelected}
         />
       </div>
+      <aside>
       <VideoBarAside videoDetails={videoDetails}
         selectedVideo={selectedVideo}
         setSelected={setSelected} />
+      </aside>
     </>
   );
 }

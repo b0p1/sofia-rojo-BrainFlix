@@ -1,6 +1,5 @@
 import VideoDetails from "./VideoDetails";
-import videoDetails from "../../../data/video-details.json";
-import { useState } from "react";
+
 
 function VideoSection({ selectedVideo, setSelected }) {
   return (

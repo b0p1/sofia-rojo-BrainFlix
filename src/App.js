@@ -8,9 +8,9 @@ import videoDetails from "./data/video-details.json";
 import { useState } from "react";
 
 function App() {
-  console.log(videoDetails);
+  // console.log(videoDetails);
   const [selectedVideo, setSelected] = useState(videoDetails[0]);
-  console.log(selectedVideo);
+  // console.log(selectedVideo);
   const videoWithoutSelectedVideo = videoDetails.filter((item) => {
     return item.id !== selectedVideo.id;
   });

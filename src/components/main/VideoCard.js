@@ -1,7 +1,7 @@
 import "../../styles/main/video-card.scss";
 
 export default function VideoCard({ item, setSelected }) {
-  console.log(item);
+  // console.log(item);
   return (
     <div
       className="video-card"

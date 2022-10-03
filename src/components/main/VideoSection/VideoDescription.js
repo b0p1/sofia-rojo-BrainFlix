@@ -1,8 +1,8 @@
-function VideoDescription(item) {
+function VideoDescription({ selectedVideo }) {
   return (
     <div className="video-section__description">
-      <p> {item.description}</p>
-      <h3> total comments</h3>
+      <p> {selectedVideo.description}</p>
+      <h3> {selectedVideo.comments.length} Comments</h3>
     </div>
   );
 }

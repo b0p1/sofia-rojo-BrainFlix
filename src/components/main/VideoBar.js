@@ -13,10 +13,7 @@ export default function VideoBar({ videoDetails, setSelected }) {
         <h3 className="video-bar__title">NEXT VIDEOS</h3>
         <div className="video-bar__list">{videoMap}</div>
       </section>
-      <aside className="video-bar-aside">
-        <h3 className="video-bar-aside__title">NEXT VIDEOS</h3>
-        <div className="video-bar-aside__list">{videoMap}</div>
-      </aside>
+      
     </>
   );
 }

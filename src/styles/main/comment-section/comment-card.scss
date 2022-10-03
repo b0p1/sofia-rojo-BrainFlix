@@ -1,0 +1,47 @@
+@use "../../partials/fonts" as *;
+@use "../../partials/variables" as *;
+@use "../../partials/mixins" as *;
+
+.comment-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: $Ave-demi;
+  font-size: 0.875rem;
+  border-top: 1px solid #e1e1e1;
+  padding: 1rem 0;
+  &__titles {
+    flex-direction: row;
+    display: flex;
+    padding-left: 3rem;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    height: 1rem;
+    font-size: 0.875rem;
+    &__avatar {
+      border-radius: 50%;
+      background-color: $Mercury;
+      width: 2.25rem;
+      height: 2.25rem;
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+    }
+    &__name {
+      font-size: 0.875rem;
+    }
+    &__date {
+      font-size: 0.875rem;
+      font-family: $Ave-reg;
+      color: #afafaf;
+      font-size: 0.875rem;
+    }
+  }
+  &__content {
+    font-size: 0.813rem;
+    margin-bottom: 0;
+    font-family: $Ave-reg;
+    padding-left: 3rem;
+  }
+}

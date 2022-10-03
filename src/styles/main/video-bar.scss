@@ -2,6 +2,13 @@
 @use "../partials/variables" as *;
 @use "../partials/mixins" as *;
 
+.video-main{
+    @include desktop{
+        width: 60%;
+        border-right: 1px solid #e1e1e1 ;
+    }
+    
+}
 .video-bar{
     padding: 1rem;
     font-size: .813rem;

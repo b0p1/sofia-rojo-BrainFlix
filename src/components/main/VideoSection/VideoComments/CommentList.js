@@ -1,4 +1,5 @@
 import CommentCard from "./CommentCard";
+import '../../../../styles/main/comment-section/comment-list.scss'
 
 function CommentList({ selectedVideo }) {
 //   console.log(selectedVideo);

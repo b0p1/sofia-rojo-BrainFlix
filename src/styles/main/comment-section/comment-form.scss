@@ -1,0 +1,79 @@
+@use "../../partials/fonts" as *;
+@use "../../partials/variables" as *;
+@use "../../partials/mixins" as *;
+
+.comment-section__form {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  font-family: $Ave-reg;
+  font-size: 0.813rem;
+  position: relative;
+}
+
+.comment {
+  &-form {
+    flex-direction: column;
+  }
+  &-box {
+    resize: none;
+    margin-top: .25rem;
+    margin-bottom: 1rem ;
+    margin-left: 3rem;
+    width: 82%;
+  }
+  &-label {
+    font-family: $Ave-demi;
+    color: $Silver;
+    margin-left: 3rem;
+  }
+  &-button__container {
+    position: relative;
+  }
+
+  &-button {
+    font-family: $Ave-demi;
+    color: white;
+    background: $BrainFlix-Blue;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 1rem 0;
+    width: 82%;
+    margin-left: 3rem;
+    &__icon {
+      position: absolute;
+      top: .75rem;
+      left: 5rem;
+    }
+  }
+  &-avatar {
+    border-radius: 50%;
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: cover;
+    object-position: left;
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+  }
+}
+
+#comment-box {
+  font-family: $Ave-reg;
+  font-size: 0.875rem;
+  color: black;
+  background-color: #fafafa;
+  border: #e1e1e1 solid 1px;
+  border-radius: 0.25rem;
+  padding: 0.7rem;
+  padding-bottom: 5rem;
+  width: 73%;
+}
+input {
+  &::placeholder {
+    color: $BrainFlix_DarkBlack;
+  }
+  &:focus {
+    outline: 1px solid $BrainFlix_DarkBlack;
+  }
+}

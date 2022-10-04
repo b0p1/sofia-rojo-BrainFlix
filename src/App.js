@@ -6,25 +6,20 @@ import Main from "./components/main/Main";
 import videoDetails from "./data/video-details.json";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import useFetch from "react-fetch-hook";
 
 function App() {
   // // console.log(videoDetails);
 
   const URL = "https://project-2-api.herokuapp.com/videos";
-  const apiKey = "7d80d951-1eaf-492c-aed1-7f90377d76cd";
+  const apiKey = "?api_key=7d80d951-1eaf-492c-aed1-7f90377d76cd";
 
-  // const {data} = useFetch(`${URL}?api_key=${apiKey}`);
-  // console.log(data);
+  const [videos, getVideos] = useState([]);
+  const [selectedVideo, setSelected] = useState(videos[0]);
+  console.log(selectedVideo);
 
-  // const [selectedVideo, setSelected] = useState(data[0]);
-  // console.log(selectedVideo);
-
-  const [videos, getVideos] = useState("");
-
-  const fetchData = () => {
+  useEffect(() => {
     axios
-      .get(`${URL}?api_key=${apiKey}`)
+      .get(`${URL}${apiKey}`)
 
       .then((resp) => {
         console.log(resp.data);
@@ -33,13 +28,14 @@ function App() {
       .catch((error) => {
         console.log(error);
       });
-  };
-  useEffect(() => {
-    fetchData();
   }, []);
 
-  // const videosWithoutSelectedVideo = data.filter((item) => {
-  //   return item.id !== selectedVideo.id;
+  const videoMap = videos.map((comment) => {
+    return comment.image;
+  });
+
+  // const videosWithoutSelectedVideo = videos.filter((video) => {
+  //   return video.id !== selectedVideo.id;
   // });
   return (
     <>
@@ -50,8 +46,7 @@ function App() {
         selectedVideo={selectedVideo}
         setSelected={setSelected}
       /> */}
-      {/* {displayData()} */}
-      <h2>{videos}</h2>
+      <h2>{videoMap}</h2>
     </>
   );
 }

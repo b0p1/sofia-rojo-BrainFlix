@@ -19,33 +19,37 @@ function App() {
   const apiKey = "?api_key=7d80d951-1eaf-492c-aed1-7f90377d76cd";
 
   const [videos, getVideos] = useState([]);
-  
-  
+  const [selectedVideo, setSelected] = useState(videos[0]);
+  // console.log(videos);
+
+  const videosWithoutSelectedVideo = videos.filter((video) => {
+     if(selectedVideo !== undefined){
+      return video.id !== selectedVideo.id; 
+    }
+  });
+  console.log(videosWithoutSelectedVideo);
+  // console.log(selectedVideo);
 
   useEffect(() => {
     axios
       .get(`${URL}${apiKey}`)
 
       .then((resp) => {
-        console.log(resp.data);
+        // console.log(resp.data);
         getVideos(resp.data);
+        setSelected(resp.data[0])
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
 
-  const [selectedVideo, setSelected] = useState(videos[0]);
   // console.log(videos);
+  
 
-  const videosWithoutSelectedVideo = videos.filter((video) => {
-    return video.id !== selectedVideo.id;
-    console.log(videosWithoutSelectedVideo);
-  });
-
-  const videoMap = videos.map((comment) => {
-    return comment.channel;
-  });
+  // const videoMap = videos.map((comment) => {
+  //   return comment.channel;
+  // });
 
   
   
@@ -58,7 +62,7 @@ function App() {
         selectedVideo={selectedVideo}
         setSelected={setSelected}
       /> */}
-      <p>{videoMap}</p>
+      {/* <p>{videoMap}</p> */}
     </>
   );
 }

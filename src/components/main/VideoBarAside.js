@@ -2,9 +2,9 @@ import React from "react";
 import VideoCard from "./VideoCard";
 import '../../styles/main/video-bar.scss'
 
-function VideoBarAside({ videoDetails, setSelected }) {
-    console.log(videoDetails);
-  const videoMap = videoDetails.map((item) => {
+function VideoBarAside({ videos, setSelected }) {
+    console.log(videos);
+  const videoMap = videos.map((item) => {
     return <VideoCard key={item.id} item={item} setSelected={setSelected} />;
   });
   // console.log(videoMap);

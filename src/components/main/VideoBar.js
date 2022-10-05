@@ -1,12 +1,12 @@
 import VideoCard from "./VideoCard";
 import "../../styles/main/video-bar.scss";
 
-export default function VideoBar({ videoDetails, setSelected }) {
+export default function VideoBar({ videos, setSelected }) {
   // console.log(videoDetails);
-  const videoMap = videoDetails.map((item) => {
+  const videoMap = videos.map((item) => {
     return <VideoCard key={item.id} item={item} setSelected={setSelected} />;
   });
-  // console.log(videoMap);
+  console.log(videoMap);
   return (
     <>
       <section className="video-bar">

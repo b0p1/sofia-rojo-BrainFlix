@@ -3,7 +3,7 @@ import VideoSection from "./VideoSection/VideoSection";
 import CommentsSection from "./VideoSection/VideoComments/CommentsSection";
 import VideoBarAside from "./VideoBarAside";
 
-function Main({ videoDetails, selectedVideo, setSelected }) {
+function Main({ videos, selectedVideo, setSelected }) {
   //   console.log(selectedVideo);
 
   return (
@@ -12,13 +12,13 @@ function Main({ videoDetails, selectedVideo, setSelected }) {
         <VideoSection selectedVideo={selectedVideo} />
         <CommentsSection selectedVideo={selectedVideo} />
         <VideoBar
-          videoDetails={videoDetails}
+          videos={videos}
           selectedVideo={selectedVideo}
           setSelected={setSelected}
         />
       </div>
       <aside>
-      <VideoBarAside videoDetails={videoDetails}
+      <VideoBarAside videos={videos}
         selectedVideo={selectedVideo}
         setSelected={setSelected} />
       </aside>

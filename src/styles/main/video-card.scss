@@ -5,6 +5,7 @@
 .video-card{
     padding: 1rem 0;
     display: flex;
+    
     &__img{
         min-width:8rem;
         max-width: 8rem;
@@ -17,7 +18,6 @@
         font-size: .8rem;
         padding-left: 1rem;
         color: $BrainFlix-DarkBlack;
-      
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -34,4 +34,8 @@
             margin: 0;
         }
     }
+}
+
+a {
+    text-decoration: none;
 }

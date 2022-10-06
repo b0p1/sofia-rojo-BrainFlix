@@ -1,9 +1,11 @@
 import "../../styles/main/video-card.scss";
+import { Link } from "react-router-dom";
 
 export default function VideoCard({ item, setSelected }) {
   // console.log(item);
   return (
-    <div
+    <Link to={`/videos/${item.id}`}>
+      <div
       className="video-card"
       onClick={() => {
         setSelected(item);
@@ -15,5 +17,7 @@ export default function VideoCard({ item, setSelected }) {
         <h3 className="video-card__desc__channel">{item.channel}</h3>
       </div>
     </div>
+    </Link>
+  
   );
 }

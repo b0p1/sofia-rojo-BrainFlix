@@ -8,28 +8,20 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 function App() {
-  // // // console.log(videoDetails);
-  // const [selectedVideo, setSelected] = useState(videoDetails[0]);
-  // // console.log(selectedVideo);
-  // const videoWithoutSelectedVideo = videoDetails.filter((item) => {
-  //   return item.id !== selectedVideo.id;
-  // });
-
   const URL = "https://project-2-api.herokuapp.com/videos";
   const apiKey = "?api_key=7d80d951-1eaf-492c-aed1-7f90377d76cd";
 
+
   const [videos, getVideos] = useState([]);
-  const [selectedVideo, setSelected] = useState(videos[0]);
-  // console.log(videos);
+  const [selectedVideo, setSelected] = useState(null);
 
   const videosWithoutSelectedVideo = videos.filter((video) => {
-     if(selectedVideo !== undefined){
-      return video.id !== selectedVideo.id; 
-    }
-  });
-  console.log(videosWithoutSelectedVideo);
-  // console.log(selectedVideo);
+    if(selectedVideo !== undefined){
+     return video.id !== selectedVideo.id; 
+   }
+ });
 
+  // Fetches data from api 
   useEffect(() => {
     axios
       .get(`${URL}${apiKey}`)
@@ -43,26 +35,22 @@ function App() {
         console.log(error);
       });
   }, []);
+  // Returns null when there is an empty object
+  // --this allows the object to load before it is called in the other components
+  if (!selectedVideo){
+    return null
+  }
 
-  // console.log(videos);
-  
-
-  // const videoMap = videos.map((comment) => {
-  //   return comment.channel;
-  // });
-
-  
-  
   return (
     <>
-      {/* <Header />
+    {/* <h2>{selectedVideo.channel}</h2> */}
+      <Header />
       <Hero selectedVideo={selectedVideo} setSelected={setSelected} />
       <Main
         updatedVideos={videosWithoutSelectedVideo}
         selectedVideo={selectedVideo}
         setSelected={setSelected}
-      /> */}
-      {/* <p>{videoMap}</p> */}
+      />
     </>
   );
 }

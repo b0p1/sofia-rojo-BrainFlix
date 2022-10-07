@@ -1,10 +1,13 @@
-import '../styles/hero.scss'
+import "../styles/hero.scss";
 
-export default function Hero({selectedVideo}) {
+export default function Hero({ selectedVideo }) {
   return (
     <section className="hero">
-      <video className="hero__video" controls poster={selectedVideo.image}> 
-      </video>
+      <video
+        className="hero__video"
+        controls
+        poster={selectedVideo.image}
+      ></video>
     </section>
   );
 }

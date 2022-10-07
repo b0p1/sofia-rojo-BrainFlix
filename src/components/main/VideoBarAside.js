@@ -1,12 +1,12 @@
 import React from "react";
 import VideoCard from "./VideoCard";
-import '../../styles/main/video-bar.scss'
+import "../../styles/main/video-bar.scss";
 
-function VideoBarAside({updatedVideos, setSelected }) {
+function VideoBarAside({ updatedVideos }) {
   const videoMap = updatedVideos.map((item) => {
-    return <VideoCard key={item.id} item={item} setSelected={setSelected} />;
+    return <VideoCard key={item.id} item={item} />;
   });
-  
+
   return (
     <>
       <section className="video-bar-aside">

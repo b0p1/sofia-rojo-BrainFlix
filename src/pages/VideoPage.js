@@ -20,9 +20,11 @@ function VideoPage() {
       .get(`${URL}${apiKey}`)
       .then((resp) => {
         getVideos(resp.data);
-        setSelected(resp.data[0]);
         const videoId = id || resp.data[0].id;
         return axios.get(`${URL}/${videoId}${apiKey}`);
+      })
+      .then((resp) => {
+        setSelected(resp.data);
       })
       .catch(() => {
         console.error("Error");
@@ -44,11 +46,10 @@ function VideoPage() {
   return (
     <>
       <Header />
-      <Hero selectedVideo={selectedVideo}/>
+      <Hero selectedVideo={selectedVideo} />
       <Main
         updatedVideos={videosWithoutSelectedVideo}
         selectedVideo={selectedVideo}
-        setSelected={setSelected}
       />
     </>
   );

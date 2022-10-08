@@ -8,23 +8,15 @@
   font-family: $Ave-reg;
   font-size: 0.813rem;
   position: relative;
-  @include tablet {
-    padding: 0rem 2rem;
-    margin-top: -1rem;
-    flex-direction: row;
-  }
-  @include desktop {
-    padding-left: 8rem;
-  }
-
   &__label {
     font-family: $Ave-demi;
     color: $Silver;
-    &-box {
-      margin-top: 0.25rem;
-      margin-bottom: 1rem;
-      width: 82%;
-    }
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  &__title-box {
+    width: auto;
+    margin-bottom: 0.25rem;
   }
   &__desc-box {
     resize: none;
@@ -37,36 +29,38 @@
 
   &__button {
     font-family: $Ave-demi;
+    font-size: .813rem;
     color: white;
     background: $BrainFlix-Blue;
     border: none;
     border-radius: 0.25rem;
-    padding: 1rem 0;
-    width: 82%;
-    @include tablet {
-      margin: 0;
-      position: absolute;
-      //   top: -4.125rem;
-      //   right: -11rem;
-      width: 35%;
-      padding: 0.925rem 0;
-    }
-    @include desktop {
-      width: 30%;
-    }
+    padding: .75rem 0;
+    width: 100%;
+    margin: 1.5rem 0;
     &-icon {
       position: absolute;
-      top: 0.75rem;
-      left: 5rem;
+      top: 2rem;
+      left: .5rem;
       @include tablet {
-        // left: 33rem;
-        // top: -3.25rem;
         z-index: 1;
       }
     }
   }
 }
 
+.upload-form__button:hover{
+    background-color: $BrainFlix_DarkBlue;
+    cursor:pointer;
+}
+
+input {
+  &::placeholder {
+    color: $BrainFlix_DarkBlack;
+  }
+  &:focus {
+    outline: 2px solid $BrainFlix_Blue;
+  }
+}
 #title-box {
   font-family: $Ave-reg;
   font-size: 0.875rem;
@@ -79,15 +73,15 @@
     padding-bottom: 1rem;
   }
 }
-input {
+
+textarea {
   &::placeholder {
     color: $BrainFlix_DarkBlack;
   }
   &:focus {
-    outline: 1px solid $BrainFlix_DarkBlack;
+    outline: 2px solid $BrainFlix_Blue;
   }
 }
-
 #desc-box {
   padding-bottom: 5rem;
   font-family: $Ave-reg;
@@ -100,7 +94,4 @@ input {
   @include tablet {
     padding-bottom: 1rem;
   }
-}
-.upload-thumbnail__img {
-  width: 100%;
 }

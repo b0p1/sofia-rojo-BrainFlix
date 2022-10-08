@@ -9,7 +9,7 @@ function UploadForm(props) {
       </label>
       <input
         type="text"
-        className="upload-form__label-box"
+        className="upload-form__title-box"
         id="title-box"
         placeholder="Add a title to your video"
       ></input>
@@ -21,6 +21,7 @@ function UploadForm(props) {
         className="upload-form__desc-box"
         autoComplete="off"
         placeholder="Add a description to your video"
+        rows="5"
       ></textarea>
       <div className="upload-form-button-container">
         <button className="upload-form__button">PUBLISH</button>

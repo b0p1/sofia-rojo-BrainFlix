@@ -2,7 +2,7 @@ import "./styles/global.scss";
 import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
 import VideoPage from "./pages/VideoPage";
 import NotFound from "./pages/NotFoundPage";
-import UploadPage from "./pages/UploadPage"
+import UploadPage from "./pages/UploadPage/UploadPage"
 
 function App() {
   return (

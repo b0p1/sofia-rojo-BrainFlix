@@ -7,25 +7,25 @@
   flex-direction: column;
   padding: 1rem;
   position: relative;
-  @include tablet{
+  @include tablet {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     padding: 1rem 2rem;
   }
-  @include desktop{
+  @include desktop {
     padding: 1rem 8rem;
   }
   &__logo {
     height: 1.563rem;
-    @include tablet{
+    @include tablet {
       padding: 1rem;
       position: absolute;
-      top: .75rem;
+      top: 0.75rem;
       left: 1rem;
     }
-    @include desktop{
-      left:7rem;
+    @include desktop {
+      left: 7rem;
     }
   }
   &__search-bar {
@@ -39,17 +39,16 @@
     border-radius: 0.25rem;
     margin: 1rem 0;
     width: 67%;
-    @include tablet{
+    @include tablet {
       margin: 0;
-      padding: .75rem;
+      padding: 0.75rem;
       padding-left: 2.5rem;
-      padding-right:1rem;
+      padding-right: 1rem;
     }
-    &-container{
+    &-container {
       position: relative;
       margin: 0;
-      @include tablet{
-        
+      @include tablet {
       }
     }
 
@@ -59,11 +58,10 @@
     &__icon {
       position: absolute;
       top: 1.5rem;
-      left: .5rem;
-      @include tablet{
-        top: .75rem;
+      left: 0.5rem;
+      @include tablet {
+        top: 0.75rem;
         left: 1rem;
-        
       }
     }
   }
@@ -75,22 +73,22 @@
     border-radius: 0.25rem;
     padding: 1rem;
     width: 100%;
-    @include tablet{
-      padding:.75rem 3rem;
+    @include tablet {
+      padding: 0.75rem 3rem;
     }
-    &-container{
+    &-container {
       position: relative;
-      @include tablet{
-       margin-left: 1rem;
+      @include tablet {
+        margin-left: 1rem;
       }
     }
     &__icon {
       position: absolute;
-      top: .75rem;
-      left: .5rem;
-      @include tablet{
-        top: .5rem;
-        left: .5rem;
+      top: 0.75rem;
+      left: 0.5rem;
+      @include tablet {
+        top: 0.5rem;
+        left: 0.5rem;
       }
     }
   }
@@ -103,13 +101,17 @@
     object-position: 20%;
     right: 1rem;
     top: 3.5rem;
-    @include tablet{
+    @include tablet {
       width: 3rem;
       height: 3rem;
-      position:static;
-      margin:0 .5rem;
+      position: static;
+      margin: 0 0.5rem;
       margin-left: 1rem;
     }
   }
-  
+}
+
+.nav__button:hover {
+  background-color: $BrainFlix_DarkBlue;
+  cursor: pointer;
 }

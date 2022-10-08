@@ -113,3 +113,8 @@ input {
     outline: 1px solid $BrainFlix_DarkBlack;
   }
 }
+
+.comment-button:hover {
+  background-color: $BrainFlix_DarkBlue;
+  cursor: pointer;
+}

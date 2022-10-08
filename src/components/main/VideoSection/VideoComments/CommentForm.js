@@ -12,8 +12,7 @@ function CommentForm() {
       ></img>
       <form className="comment-from">
         <label className="comment-label" htmlFor="comment-box">
-          {" "}
-          JOIN THE CONVERSATION{" "}
+          JOIN THE CONVERSATION
         </label>
         <textarea
           id="comment-box"

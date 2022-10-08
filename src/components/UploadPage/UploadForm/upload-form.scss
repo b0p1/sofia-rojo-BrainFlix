@@ -1,0 +1,106 @@
+@use "../../../styles/partials/fonts" as *;
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/mixins" as *;
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  font-family: $Ave-reg;
+  font-size: 0.813rem;
+  position: relative;
+  @include tablet {
+    padding: 0rem 2rem;
+    margin-top: -1rem;
+    flex-direction: row;
+  }
+  @include desktop {
+    padding-left: 8rem;
+  }
+
+  &__label {
+    font-family: $Ave-demi;
+    color: $Silver;
+    &-box {
+      margin-top: 0.25rem;
+      margin-bottom: 1rem;
+      width: 82%;
+    }
+  }
+  &__desc-box {
+    resize: none;
+  }
+
+  &-button-container {
+    position: relative;
+    margin: 0;
+  }
+
+  &__button {
+    font-family: $Ave-demi;
+    color: white;
+    background: $BrainFlix-Blue;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 1rem 0;
+    width: 82%;
+    @include tablet {
+      margin: 0;
+      position: absolute;
+      //   top: -4.125rem;
+      //   right: -11rem;
+      width: 35%;
+      padding: 0.925rem 0;
+    }
+    @include desktop {
+      width: 30%;
+    }
+    &-icon {
+      position: absolute;
+      top: 0.75rem;
+      left: 5rem;
+      @include tablet {
+        // left: 33rem;
+        // top: -3.25rem;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+#title-box {
+  font-family: $Ave-reg;
+  font-size: 0.875rem;
+  color: black;
+  background-color: #fafafa;
+  border: #e1e1e1 solid 1px;
+  border-radius: 0.25rem;
+  padding: 0.7rem;
+  @include tablet {
+    padding-bottom: 1rem;
+  }
+}
+input {
+  &::placeholder {
+    color: $BrainFlix_DarkBlack;
+  }
+  &:focus {
+    outline: 1px solid $BrainFlix_DarkBlack;
+  }
+}
+
+#desc-box {
+  padding-bottom: 5rem;
+  font-family: $Ave-reg;
+  font-size: 0.875rem;
+  color: black;
+  background-color: #fafafa;
+  border: #e1e1e1 solid 1px;
+  border-radius: 0.25rem;
+  padding: 0.7rem;
+  @include tablet {
+    padding-bottom: 1rem;
+  }
+}
+.upload-thumbnail__img {
+  width: 100%;
+}

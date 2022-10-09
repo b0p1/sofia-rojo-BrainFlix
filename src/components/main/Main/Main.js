@@ -1,5 +1,5 @@
 import VideoBar from "../VideoBar";
-import VideoSection from "../VideoSection/VideoSection";
+import VideoSection from "../VideoSection/VideoDetails/VideoSection";
 import CommentsSection from "../VideoSection/VideoComments/CommentsSection";
 import VideoBarAside from "../VideoBarAside";
 import "./main.scss";

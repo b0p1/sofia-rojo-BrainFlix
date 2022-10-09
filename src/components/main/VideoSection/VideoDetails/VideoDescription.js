@@ -1,4 +1,4 @@
-import "../../../styles/main/video-details.scss";
+import "./video-details.scss";
 
 function VideoDescription({ selectedVideo }) {
   return (

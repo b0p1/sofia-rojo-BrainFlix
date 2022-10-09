@@ -21,8 +21,8 @@ h2 {
       padding: 1rem 2rem;
     }
     @include desktop{
-      padding: 1rem 8rem;
-    }
+      padding: 2rem 0;
+  }
   }
   &__data {
     border-bottom: 1px solid $Mercury;

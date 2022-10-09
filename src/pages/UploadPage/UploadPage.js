@@ -1,15 +1,15 @@
 import Header from "../../components/Header";
 import VideoThumbnail from "../../assets/images/Upload-video-preview.jpg";
-import UploadForm from "../../components/UploadPage/UploadForm/UploadForm";
-import { Link } from "react-router-dom";
-import './upload-page.scss'
+import UploadForm from "../../components/UploadForm/UploadForm/UploadForm";
+
+import "./upload-page.scss";
 
 function UploadPage() {
   return (
     <>
-      <Header/>
+      <Header />
       <section className="upload-container">
-        <h1>Upload Video</h1>
+        <h1 className="upload-title">Upload Video</h1>
         <div className="upload-thumbnail">
           <h2 className="upload-thumbnail__title">VIDEO THUMBNAIL</h2>
           <img
@@ -19,9 +19,6 @@ function UploadPage() {
           />
         </div>
         <UploadForm />
-        <Link to="/">
-          <h2 className="upload-cancel">CANCEL</h2>
-        </Link>
       </section>
     </>
   );

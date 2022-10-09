@@ -10,22 +10,45 @@
     border-top: 1px solid $Mercury;
     @include tablet {
       padding: 0rem 2rem;
+      border-top: 0;
     }
     @include desktop {
-      padding-left: 8rem;
+      padding: 0 8rem;
+      
     }
   }
+  &-thumbnail-form {
+    @include desktop {
+      width: 100%;
+      border-top: 1px solid $Mercury;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
   &-title {
     padding-top: 0.25rem;
     padding-bottom: 1rem;
     @include tablet {
       font-size: 2.063rem;
-      padding: 2rem 0;
+      padding: 2rem 2rem;
       border-bottom: 1px solid $Mercury;
       font-family: $Ave-bold;
     }
+    @include desktop {
+      border-top: 1px solid $Mercury;
+      padding-left: 8rem;
+      border-bottom: none;
+    }
   }
   &-thumbnail {
+    @include desktop {
+      width: 40%;
+      height: 15.21rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid $Mercury;
+    }
     &__title {
       color: $Silver;
       font-family: $Ave-demi;
@@ -43,6 +66,9 @@
       @include tablet {
         width: 50%;
         height: auto;
+      }
+      @include desktop {
+        width: 87%;
       }
     }
   }

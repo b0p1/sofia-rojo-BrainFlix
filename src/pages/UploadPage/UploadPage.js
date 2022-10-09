@@ -8,17 +8,19 @@ function UploadPage() {
   return (
     <>
       <Header />
+      <h1 className="upload-title">Upload Video</h1>
       <section className="upload-container">
-        <h1 className="upload-title">Upload Video</h1>
-        <div className="upload-thumbnail">
-          <h2 className="upload-thumbnail__title">VIDEO THUMBNAIL</h2>
-          <img
-            className="upload-thumbnail__img"
-            src={VideoThumbnail}
-            alt="Video Thumbnail Preview"
-          />
+        <div className="upload-thumbnail-form">
+          <div className="upload-thumbnail">
+            <h2 className="upload-thumbnail__title">VIDEO THUMBNAIL</h2>
+            <img
+              className="upload-thumbnail__img"
+              src={VideoThumbnail}
+              alt="Video Thumbnail Preview"
+            />
+          </div>
+          <UploadForm />
         </div>
-        <UploadForm />
       </section>
     </>
   );

@@ -8,6 +8,9 @@
   font-family: $Ave-reg;
   font-size: 0.813rem;
   position: relative;
+  @include desktop {
+    width: 60%;
+  }
   &__label {
     font-family: $Ave-demi;
     color: $Silver;
@@ -15,6 +18,9 @@
     margin-bottom: 0.25rem;
     @include tablet {
       font-size: 0.875;
+    }
+    @include desktop {
+      margin-top: 2rem;
     }
   }
   &__title-box {
@@ -27,7 +33,7 @@
       margin-bottom: 1.5rem;
     }
   }
-  &-bottom-container{
+  &-bottom-container {
     @include tablet {
       display: flex;
       flex-direction: row;
@@ -41,10 +47,12 @@
   &-button-container {
     position: relative;
     margin: 0;
-    @include tablet{
+    @include tablet {
       width: 25%;
     }
-   
+    @include desktop {
+      width: 100%;
+    }
   }
 
   &__button {
@@ -58,7 +66,7 @@
     width: 100%;
     margin: 1.5rem 0;
     @include tablet {
-      font-size: .875rem;
+      font-size: 0.875rem;
     }
 
     &-icon {
@@ -75,21 +83,23 @@
     margin: 1rem 0;
     margin-bottom: 1.5rem;
     display: none;
-   @include tablet{
-    display: inline;
-    padding: 0 4rem;
-   }
-   &-bottom{
-    color: $BrainFlix-Blue;
-    font-family: $Ave-demi;
-    text-align: center;
-    font-size: 0.813rem;
-    margin: 1rem 0;
-    margin-bottom: 1.5rem;
-    @include tablet{
-      display: none;
+    @include tablet {
+      display: inline;
+      padding: 0 4rem;
     }
-   }
+    @include desktop {
+    }
+    &-bottom {
+      color: $BrainFlix-Blue;
+      font-family: $Ave-demi;
+      text-align: center;
+      font-size: 0.813rem;
+      margin: 1rem 0;
+      margin-bottom: 1.5rem;
+      @include tablet {
+        display: none;
+      }
+    }
   }
 }
 
@@ -136,4 +146,8 @@ textarea {
   border-radius: 0.25rem;
   padding: 0.7rem;
   height: 6rem;
+  @include desktop {
+    padding-bottom: 0;
+    height: 5rem;
+  }
 }

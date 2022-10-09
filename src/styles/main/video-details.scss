@@ -6,8 +6,9 @@ h1 {
   font-family: $Ave-demi;
   margin: 0;
   padding-bottom: 1rem;
-  @include tablet{
+  @include tablet {
     font-size: 2rem;
+    font-family: $Ave-bold;
   }
 }
 
@@ -42,6 +43,11 @@ h3 {
       padding: 2rem 0;
     }
   }
+  &__channel {
+    @include tablet {
+      font-family: $Ave-bold;
+    }
+  }
   &__data {
     border-bottom: 1px solid $Mercury;
     border-top: 1px solid $Mercury;
@@ -71,10 +77,10 @@ h3 {
     padding-left: 7rem;
     @include tablet {
       position: absolute;
-      left: 28.5rem;
+      left: 24.5rem;
       top: 0.125rem;
     }
-    @include desktop{
+    @include desktop {
       padding: 0;
       left: 30.75rem;
     }
@@ -86,7 +92,7 @@ h3 {
         top: 0.85rem;
         left: 29.5rem;
       }
-      @include desktop{
+      @include desktop {
         left: 29rem;
       }
     }
@@ -107,7 +113,6 @@ h3 {
       left: 2rem;
       top: -1rem;
     }
-   
   }
   &__likes {
     color: $Silver;
@@ -117,7 +122,7 @@ h3 {
       left: 29rem;
       top: -1.125rem;
     }
-    @include desktop{
+    @include desktop {
       padding: 0;
       left: 33rem;
     }
@@ -130,7 +135,7 @@ h3 {
         left: 34rem;
         top: -0.3rem;
       }
-      @include desktop{
+      @include desktop {
         left: 31.5rem;
       }
     }

@@ -14,7 +14,7 @@
     margin-top: -1rem;
     flex-direction: row;
   }
-  @include desktop{
+  @include desktop {
     padding: 0;
   }
 }
@@ -38,6 +38,7 @@
   &-button__container {
     position: relative;
     margin: 0;
+    margin-right: 1rem;
   }
 
   &-button {
@@ -65,11 +66,11 @@
       top: 0.75rem;
       left: 5rem;
       @include tablet {
-        left: 33rem;
+        left: 32rem;
         top: -3.25rem;
         z-index: 1;
       }
-      @include desktop{
+      @include desktop {
         left: 33rem;
       }
     }
@@ -87,7 +88,7 @@
       left: 2rem;
     }
     @include desktop {
-      left: 4rem;
+      left: 0rem;
     }
   }
 }

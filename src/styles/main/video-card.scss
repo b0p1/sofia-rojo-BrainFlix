@@ -24,9 +24,9 @@
         justify-content: space-around;
         &__title{ 
             margin: 0;
-            // overflow: hidden;
-            // white-space: nowrap;
-            // text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: wrap;
+            text-overflow: ellipsis;
         }
         &__channel{
             font-family: $Ave-reg;

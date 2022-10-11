@@ -1,8 +1,8 @@
-import BrainFlixLogo from "../assets/logo/BrainFlix-logo.svg";
-import ProfileAvatar from "../assets/images/Mohan-muruge.jpg";
-import SearchIcon from "../assets/icons/search.svg";
-import UploadIcon from "../assets/icons/upload.svg";
-import "../styles/nav-bar.scss";
+import BrainFlixLogo from "../../assets/logo/BrainFlix-logo.svg";
+import ProfileAvatar from "../../assets/images/Mohan-muruge.jpg";
+import SearchIcon from "../../assets/icons/search.svg";
+import UploadIcon from "../../assets/icons/upload.svg";
+import "./nav-bar.scss";
 import { Link } from "react-router-dom";
 
 const Header = () => {

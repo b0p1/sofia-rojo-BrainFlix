@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Header from "../components/Header/Header";
 import Main from "../components/MainSection/Main/Main";
-import Hero from "../components/Hero";
+import Hero from "../components/Hero/Hero";
 
 function VideoPage() {
   const URL = "https://project-2-api.herokuapp.com/videos";

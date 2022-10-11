@@ -1,4 +1,4 @@
-import "../styles/hero.scss";
+import "./hero.scss";
 
 export default function Hero({ selectedVideo }) {
   return (

@@ -1,5 +1,5 @@
-import CommentCard from "./CommentCard";
-import "../../../../styles/main/comment-section/comment-list.scss";
+import CommentCard from "../CommentCard/CommentCard";
+import "./comment-list.scss";
 
 function CommentList({ selectedVideo }) {
   const videoComments = selectedVideo.comments;

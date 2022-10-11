@@ -1,6 +1,6 @@
-import ProfileAvatar from "../../../../assets/images/Mohan-muruge.jpg";
-import CommentIcon from "../../../../assets/icons/add_comment.svg";
-import "../../../../styles/main/comment-section/comment-form.scss";
+import ProfileAvatar from "../../../../../assets/images/Mohan-muruge.jpg";
+import CommentIcon from "../../../../../assets/icons/add_comment.svg";
+import "./comment-form.scss";
 
 function CommentForm() {
   return (

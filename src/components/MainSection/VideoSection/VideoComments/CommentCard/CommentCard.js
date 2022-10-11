@@ -1,4 +1,4 @@
-import "../../../../styles/main/comment-section/comment-card.scss";
+import "./comment-card.scss";
 
 function CommentCard({ item }) {
   return (

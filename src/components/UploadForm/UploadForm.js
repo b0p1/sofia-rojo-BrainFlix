@@ -1,5 +1,5 @@
 import "./upload-form.scss";
-import PublishIcon from "../../../assets/icons/publish.svg";
+import PublishIcon from "../../assets/icons/publish.svg";
 import { Link } from "react-router-dom";
 
 function UploadForm(props) {

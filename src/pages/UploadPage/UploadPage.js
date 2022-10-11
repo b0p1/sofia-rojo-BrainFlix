@@ -1,6 +1,6 @@
 import Header from "../../components/Header/Header";
 import VideoThumbnail from "../../assets/images/Upload-video-preview.jpg";
-import UploadForm from "../../components/UploadForm/UploadForm/UploadForm";
+import UploadForm from "../../components/UploadForm/UploadForm";
 
 import "./upload-page.scss";
 

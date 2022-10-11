@@ -29,7 +29,9 @@ function UploadForm(props) {
           <h2 className="upload-form__cancel">CANCEL</h2>
         </Link>
         <div className="upload-form-button-container">
-          <button className="upload-form__button">PUBLISH</button>
+          <Link to="/">
+            <button className="upload-form__button">PUBLISH</button>
+          </Link>
           <img
             className="upload-form__button-icon"
             src={PublishIcon}

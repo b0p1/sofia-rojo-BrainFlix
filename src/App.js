@@ -1,7 +1,7 @@
 import "./styles/global.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import VideoPage from "./pages/VideoPage";
-import NotFound from "./pages/NotFoundPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import UploadPage from "./pages/UploadPage/UploadPage";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
           <Route path="/" element={<VideoPage />} />
           <Route path="/videos/:id" element={<VideoPage />} />
           <Route path="/upload" element={<UploadPage />} />
-          <Route path="*" component={NotFound} />
+          <Route path="*" component={<NotFoundPage/>} />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,6 +1,6 @@
 import React from "react";
-import VideoCard from "./VideoCard";
-import "../../styles/main/video-bar.scss";
+import VideoCard from "./VideoCard/VideoCard";
+import "./video-bar.scss";
 
 function VideoBarAside({ updatedVideos }) {
   const videoMap = updatedVideos.map((item) => {

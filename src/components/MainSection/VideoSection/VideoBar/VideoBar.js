@@ -1,5 +1,5 @@
-import VideoCard from "./VideoCard";
-import "../../styles/main/video-bar.scss";
+import VideoCard from "./VideoCard/VideoCard";
+import "./video-bar.scss";
 
 export default function VideoBar({ updatedVideos }) {
   const videoMap = updatedVideos.map((item) => {

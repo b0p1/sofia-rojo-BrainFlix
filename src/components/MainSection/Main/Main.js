@@ -1,7 +1,7 @@
-import VideoBar from "../VideoBar";
+import VideoBar from "../VideoSection/VideoBar/VideoBar";
 import VideoSection from "../VideoSection/VideoDetails/VideoSection";
 import CommentsSection from "../VideoSection/VideoComments/CommentsSection";
-import VideoBarAside from "../VideoBarAside";
+import VideoBarAside from "../VideoSection/VideoBar/VideoBarAside";
 import "./main.scss";
 
 function Main({ updatedVideos, selectedVideo }) {

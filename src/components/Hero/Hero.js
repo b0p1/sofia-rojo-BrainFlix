@@ -6,7 +6,7 @@ export default function Hero({ selectedVideo }) {
       <video
         className="hero__video"
         controls
-        poster={selectedVideo.image}
+        poster={`http://localhost:8080/images/${selectedVideo.image}`}
       ></video>
     </section>
   );

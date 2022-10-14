@@ -1,8 +1,10 @@
 import "./upload-form.scss";
 import PublishIcon from "../../assets/icons/publish.svg";
 import { Link } from "react-router-dom";
+import { addVideo } from "../../uitils/addVideo";
+import { useRef } from "react";
 
-function UploadForm(props) {
+function UploadForm({}) {
   return (
     <form className="upload-form">
       <label className="upload-form__label" htmlFor="title-box">
@@ -30,7 +32,7 @@ function UploadForm(props) {
         </Link>
         <div className="upload-form-button-container">
           <Link to="/">
-            <button className="upload-form__button">PUBLISH</button>
+            <button  className="upload-form__button">PUBLISH</button>
           </Link>
           <img
             className="upload-form__button-icon"

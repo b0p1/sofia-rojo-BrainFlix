@@ -6,8 +6,7 @@ import Main from "../components/MainSection/Main/Main";
 import Hero from "../components/Hero/Hero";
 
 function VideoPage() {
-  const URL = "https://project-2-api.herokuapp.com/videos";
-  const apiKey = "?api_key=7d80d951-1eaf-492c-aed1-7f90377d76cd";
+  const URL = "http://localhost:8080/videos";
 
   const [videos, getVideos] = useState([]);
   const [selectedVideo, setSelected] = useState(null);
@@ -17,11 +16,11 @@ function VideoPage() {
   // Fetches data from api
   useEffect(() => {
     axios
-      .get(`${URL}${apiKey}`)
+      .get(`${URL}`)
       .then((resp) => {
         getVideos(resp.data);
         const videoId = id || resp.data[0].id;
-        return axios.get(`${URL}/${videoId}${apiKey}`);
+        return axios.get(`${URL}/${videoId}`);
       })
       .then((resp) => {
         setSelected(resp.data);

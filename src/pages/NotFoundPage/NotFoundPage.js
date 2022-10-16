@@ -1,9 +1,16 @@
-import "./not-found-page.scss"
+import { Link } from "react-router-dom";
+import "./not-found-page.scss";
 function NotFoundPage() {
   return (
     <>
-      <h1>Error 404. Page not found!</h1>
-      <h2>Please try another page.</h2>
+      <div className="not-found-page">
+        <h1 className="not-found-page__title">Error 404. Page not found!</h1>
+        <Link to="/">
+          <h2 className="not-found-page__subtitle">
+            Click here to go back to the home page.
+          </h2>
+        </Link>
+      </div>
     </>
   );
 }
